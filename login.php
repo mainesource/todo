@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-if 
 ?>
 
 <!DOCTYPE html>
@@ -15,20 +14,20 @@ if
 </head>
 <body>
     <div class="myCont">
-        <h1>TODO Application</h1>
+        <h1 id="heading">TODO Application</h1>
         <form method="post">
             <div class="form-floating">
-                <label for="mail">Email:</label>
-                <input type="email" name="email" id="mail" class="inp" placeholder="name@email.com">
+                
+                <input type="text" name="email" id="email" class="inp" >
             </div>
             <div class="form-floating">
-                <label for="email">Password:</label>
+                
                 <input type="password" name="password" id="password" class="inp" placeholder="password">
             </div>
-            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+            <button type="submit" class="btn btn-primary btn-sm" onclick="loginValidate()">Submit</button>
             <button class="btn btn-primary btn-sm" ><a href="index.php">Cancel</a></button>
         </form>
-    </div>
-    <script src="jscript.js"></script>
+    </div>      
+    <script src="jscript.js"></script>    
 </body>
 </html>
