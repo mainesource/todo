@@ -1,3 +1,8 @@
+<?php
+session_start();
+require_once "functions.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +14,9 @@
 </head>
 <body>
     <div class="myCont">
+        <div class="fail">
+            <?php if(isset($_SESSION['failure'])) flashFail();?>
+        </div>
         <h1>Welcome TODO Application</h1>
         <p>Please Login</p>
         <button class="btn btn-primary btn-sm"><a href="login.php">Login</a></button>

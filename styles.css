@@ -5,7 +5,7 @@
 }
 body{
     background-color: rgb(43 48 53);
-    color: black;
+    color:#85948800;
     font-size: 20px;
     line-height: 1.6;
 }
@@ -19,8 +19,10 @@ a {
     height: 500px;
     margin: 200px auto;
     padding: 40px 10px;
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 5px;
     background-color: rgb(43 48 53);
+    box-shadow: 1px 1px;
     color: #DEE2e6;
     text-align: center;
     
@@ -29,7 +31,8 @@ a {
 .inp{
     width: 400px;
     padding: 5px 5px;
-    background-color: rgb(21 25 29);   
+    background-color: rgb(21 25 29);
+    color: white;   
     
 }
 #mail {
@@ -39,4 +42,12 @@ a {
 #password {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+.fail {
+    background-color: white;
+    color: red;
 }

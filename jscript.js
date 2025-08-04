@@ -2,8 +2,9 @@ function loginValidate() {
     console.log('Validating...');
     try {
         addr = document.getElementById('email').value;
+        pass = document.getElementById('password').value;
         console.log(addr);
-        if (addr === null || addr === ''){
+        if (addr === null || addr === '' || pass === null || pass === ''){
             alert("Both fields must be filled out");
             return false;
         }
