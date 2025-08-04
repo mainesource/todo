@@ -8,7 +8,7 @@
     <title>Welcome TODO Application</title>
 </head>
 <body>
-    <div class="container">
+    <div class="myCont">
         <h1>Welcome TODO Application</h1>
         <p>Please Login</p>
         <button class="btn btn-primary btn-sm"><a href="login.php">Login</a></button>

@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+if 
 ?>
 
 <!DOCTYPE html>
@@ -12,18 +14,21 @@ session_start();
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="myCont">
         <h1>TODO Application</h1>
         <form method="post">
-            <div class="mb-3">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="Email" placeholder="name@email.com" size="80">
+            <div class="form-floating">
+                <label for="mail">Email:</label>
+                <input type="email" name="email" id="mail" class="inp" placeholder="name@email.com">
             </div>
-            <label for="email">Password:</label>
-            <input type="password" name="password" id="Password" placeholder="password" size="80"><br>
+            <div class="form-floating">
+                <label for="email">Password:</label>
+                <input type="password" name="password" id="password" class="inp" placeholder="password">
+            </div>
             <button type="submit" class="btn btn-primary btn-sm">Submit</button>
             <button class="btn btn-primary btn-sm" ><a href="index.php">Cancel</a></button>
         </form>
     </div>
+    <script src="jscript.js"></script>
 </body>
 </html>
